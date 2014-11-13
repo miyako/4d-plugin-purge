@@ -1,10 +1,10 @@
 4d-plugin-purge
 ===============
 
-Privileged HelperTool to execute purge on OS X 10.10
+Privileged HelperTool to execute purge on OS X 10.9
 
 ```
-  //since OS X 10.10 the /usr/sbin/purge command requires sudo!
+  //since OS X 10.9 the /usr/sbin/purge command requires sudo!
   //this commands launches a background app,
   //which installs a privileged helper tool:
   //Library/PrivilegedHelperTools/com.apple.bsd.purge.HelperTool
