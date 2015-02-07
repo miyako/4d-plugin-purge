@@ -7,7 +7,7 @@ About
 ---
 In earlier version of OS X, it was enough to call[purge] (https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/purge.8.html) via LAUNCH EXTERNAL PROCESS.
 
-**Note**: "purge" is not installed by default, you do have to install X code or Developer Tools.
+**Note**: "purge" is not installed by default, you have to install X code or Developer Tools.
 
 Since 10.9, purge requires [sudo](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/sudo.8.html#//apple_ref/doc/man/8/sudo).
 
