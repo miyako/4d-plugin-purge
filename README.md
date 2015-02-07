@@ -1,8 +1,30 @@
 4d-plugin-purge
 ===============
 
-Privileged HelperTool to execute purge on OS X 10.9
+Privileged HelperTool to execute purge on OS X 10.9+
 
+About
+---
+In earlier version of OS X, it was enough to call[purge] (https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/purge.8.html) via LAUNCH EXTERNAL PROCESS.
+
+**Note**: "purge" is not installed by default, you do have to install X code or Developer Tools.
+
+Since 10.9, purge requires [sudo](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/sudo.8.html#//apple_ref/doc/man/8/sudo).
+
+Technically you could specify the "-S" option and hard code the admin password, but normally you wouldn't want to do that in a distributed app.
+
+The plugin is a way or circumventing that issue.
+
+First, you need to open the plugin bundle and locate the "Purge Helper" application inside ```Contents/MacOS/``` and launch it directly.
+
+In the first instance, the OS will ask whether you want to install a "Helper Tool" and prompt for an admin password.
+
+**Note**: A similar procedure is required when you starting the web server with a port number below 1024 for the first time.
+
+Once the helper tool is installed (it is a daemon), you can call "purge" via the plugin without entering the admin password each time.
+
+Example
+---
 ```
   //since OS X 10.9 the /usr/sbin/purge command requires sudo!
   //this commands launches a background app,
