@@ -13,7 +13,7 @@ Since 10.9, purge requires [sudo](https://developer.apple.com/library/mac/docume
 
 Technically you could specify the "-S" option and hard code the admin password, but normally you wouldn't want to do that in a distributed app.
 
-This plugin offers an alterbnative way of calling purge with elevated privileges.
+This plugin offers an alternative way of calling "purge" with elevated privileges.
 
 First, you need to open the plugin bundle and locate the "Purge Helper" application inside ```Contents/MacOS/``` and launch it directly.
 
