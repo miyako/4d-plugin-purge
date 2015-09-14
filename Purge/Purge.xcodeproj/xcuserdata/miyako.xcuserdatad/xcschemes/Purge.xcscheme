@@ -35,11 +35,12 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Development"
+      buildConfiguration = "Deployment"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <PathRunnable
+         runnableDebuggingMode = "0"
          FilePath = "/Applications/4D/v14.x/172886/4D v14/4D.app">
       </PathRunnable>
       <MacroExpansion>
