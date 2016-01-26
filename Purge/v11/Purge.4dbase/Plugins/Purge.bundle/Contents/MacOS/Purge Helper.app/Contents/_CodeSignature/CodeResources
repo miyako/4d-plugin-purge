@@ -12,13 +12,27 @@
 	<key>files2</key>
 	<dict>
 		<key>Library/LaunchServices/com.apple.bsd.purge.HelperTool</key>
-		<data>
-		57U+u6PQn+ke/XUIF9Z/wGCko50=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			jcK5dE4WmyJOUePCOhfPKnBRUQI=
+			</data>
+			<key>hash2</key>
+			<data>
+			8AbvmnzLQQw1nfmf8y5NqO197NtXE06dk8eEtfbDxt8=
+			</data>
+		</dict>
 		<key>Resources/MainMenu.nib</key>
-		<data>
-		yUObvP4BfG2nXpb03pFBrJB9hNo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			yUObvP4BfG2nXpb03pFBrJB9hNo=
+			</data>
+			<key>hash2</key>
+			<data>
+			d1/0fS1Z4IxeTD6gDKeaahx0nUer9eBs/iHJmqxadeo=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
