@@ -3,7 +3,11 @@
 
 Privileged HelperTool to execute purge on OS X 10.9+
 
-* Tested on El Capitan: ```YES```
+##Platform
+
+| carbon | cocoa | win32 | win64 |
+|:------:|:-----:|:---------:|:---------:|
+|🆗|🆗|🚫|🚫|
 
 About
 ---
