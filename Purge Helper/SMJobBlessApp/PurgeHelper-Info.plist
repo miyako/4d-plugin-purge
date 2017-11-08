@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.bsd.purgehelper</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -16,16 +16,16 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
 	<key>LSBackgroundOnly</key>
 	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.apple.bsd.purge.HelperTool</key>
-		<string>identifier com.apple.bsd.purge.HelperTool and certificate leaf[subject.CN] = &quot;Mac Developer: keisuke miyako (4W9UT59D3B)&quot;</string>
+		<string>identifier com.apple.bsd.purge.HelperTool and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)"</string>
 	</dict>
 </dict>
 </plist>
