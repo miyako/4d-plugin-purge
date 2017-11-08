@@ -27,7 +27,7 @@ PURGE DISK BUFFERS
 
 About
 ---
-In earlier version of OS X, it was enough to call [purge] (https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/purge.8.html) via LAUNCH EXTERNAL PROCESS.
+In earlier version of OS X, it was enough to call [purge](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/purge.8.html) via ``LAUNCH EXTERNAL PROCESS``.
 
 **Note**: "purge" is not installed by default, you have to install X code and/or [Developer Tools](https://developer.apple.com/downloads/index.action).
 
