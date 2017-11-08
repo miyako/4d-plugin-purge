@@ -15,6 +15,8 @@ Privileged HelperTool to execute purge on OS X 10.9+
 
 ### Releases
 
+[for macOS 10.13 (High Sierra)](https://github.com/miyako/4d-plugin-purge/releases/tag/1.0.1)
+
 [for macOS 10.11 (El Capitan)](https://github.com/miyako/4d-plugin-purge/releases/tag/1.0.0)
 
 ## Syntax
