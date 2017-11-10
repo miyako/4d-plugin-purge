@@ -19,7 +19,7 @@ This technology is **deprecated**
 
 The code is based on [SMJobBless](https://developer.apple.com/library/content/samplecode/SMJobBless/Introduction/Intro.html).
 
-It needs to be rewritten for [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html)
+It needs to be rewritten using [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
 
 ### Releases
 
