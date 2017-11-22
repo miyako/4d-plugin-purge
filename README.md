@@ -19,6 +19,10 @@ The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **depr
 
 Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
 
+### Build Information
+
+As explained [here](https://github.com/atnan/SMJobBlessXPC/issues/7), it is imperative to run ``SMJobBlessUtil.py`` before building the application.
+
 ## Syntax
 
 ```
