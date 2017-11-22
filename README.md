@@ -65,4 +65,4 @@ pid: number
 
 ``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
 
-The installer is lanched ``!isHelperToolInstalled``.
+The installer is lanched if ``!isHelperToolInstalled``.
