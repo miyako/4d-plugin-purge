@@ -33,6 +33,8 @@ This updates ``SMPrivilegedExecutables`` in ``App-Info.plist`` and ``SMAuthorize
 
 It seems ``SMJobBless`` and ``launchd`` reads ``Info.plist`` of the main application, not of the plugin (which makes sense). The plugin uses a small app (hidden, ``LSBackgroundOnly``) to install the helper. The "installer" app displays a simple user interface if the argument ``--debug`` is passed.
 
+It seems like there is no easy way to call ``NSXPCConnection`` or ``NSXPCInterface`` from the plugin, especially if the plugin is reloaded without terminating the main application. As a workaround, a proxy console application is called each time to run ``purge``.
+
 ## Syntax
 
 ```
@@ -59,6 +61,4 @@ pid: number
 
 ``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
 
-if ``!isHelperToolInstalled``, the installer is lanched.
-
-Due to object referencing conflict in the main thread (especially after reloading the plugin without terminating 4D), a proxy console application is called each time to run ``purge``.
+The installer is lanched ``!isHelperToolInstalled``.
