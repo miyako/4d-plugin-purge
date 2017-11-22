@@ -1,7 +1,7 @@
 4d-plugin-purge
 ===============
 
-Privileged HelperTool to execute purge on OS X 10.9+
+Privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/purge.8.html) on macOS
 
 ### Platform
 
@@ -13,58 +13,56 @@ Privileged HelperTool to execute purge on OS X 10.9+
 
 <img src="https://cloud.githubusercontent.com/assets/1725068/18940649/21945000-8645-11e6-86ed-4a0f800e5a73.png" width="32" height="32" /> <img src="https://cloud.githubusercontent.com/assets/1725068/18940648/2192ddba-8645-11e6-864d-6d5692d55717.png" width="32" height="32" />
 
+### Releases
+
+https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.0
+
 ### Note
 
 The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **deprecated**.
 
-It was based on [SMJobBless](https://developer.apple.com/library/content/samplecode/SMJobBless/Introduction/Intro.html), not even [BetterAuthorizationSample](https://developer.apple.com/legacy/library/samplecode/BetterAuthorizationSample/Introduction/Intro.html).
+Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
 
-The current technology is [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
+### Build Information
+
+As explained [here](https://github.com/atnan/SMJobBlessXPC/issues/7), it is imperative to run ``SMJobBlessUtil.py`` before building the application. Do **not** update the project version, or the python script will fail.
+
+The syntax is 
+
+```
+SMJobBlessUtil.py setrep {app} {App-Info.plist} {HelperTool-Info.plist}
+```
+
+This updates ``SMPrivilegedExecutables`` in ``App-Info.plist`` and ``SMAuthorizedClients`` in ``HelperTool-Info.plist``.
+
+It seems ``SMJobBless`` and ``launchd`` reads ``Info.plist`` of the main application, not of the plugin (which makes sense). The plugin uses a small app (hidden, ``LSBackgroundOnly``) to install the helper. The "installer" app displays a simple user interface if the argument ``--debug`` is passed.
+
+It seems like there is no easy way to call ``NSXPCConnection`` or ``NSXPCInterface`` from the plugin, especially if the plugin is reloaded without terminating the main application. As a workaround, a proxy console application is called each time to run ``purge``.
 
 ## Syntax
 
 ```
-PURGE DISK BUFFERS
+PURGE DISK CACHE (info)
 ```
 
-## Discussion
+Parameter|Type|Description
+------------|------------|----
+info|TEXT|JSON (out)
 
-In earlier version of OS X, it was enough to call [purge](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/purge.8.html) via ``LAUNCH EXTERNAL PROCESS``.
+The command name and signature is different to the old version.
 
-**Note**: "purge" is not installed by default, you have to install X code and/or [Developer Tools](https://developer.apple.com/downloads/index.action).
-
-```
-xcode-select --install
-```
-
-Since 10.9, purge requires [sudo](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/sudo.8.html#//apple_ref/doc/man/8/sudo).
-
-Technically you could specify the "-S" option and hard code the admin password, but normally you wouldn't want to do that in a distributed app.
-
-This plugin offers an alternative way of calling "purge" with elevated privileges.
-
-First, you need to open the plugin bundle and locate the "Purge Helper" application inside ```Contents/MacOS/``` and launch it directly.
-
-In the first instance, the OS will ask whether you want to install a "Helper Tool" and prompt for an admin password.
-
-**Note**: A similar procedure is required when you starting the web server with a port number below 1024 for the first time.
-
-Once the helper tool is installed (it is a daemon), you can call "purge" via the plugin without entering the admin password each time.
-
-## Examples
+structure of info object:
 
 ```
-  //since OS X 10.9 the /usr/sbin/purge command requires sudo!
-  //this commands launches a background app,
-  //which installs a privileged helper tool:
-  //Library/PrivilegedHelperTools/com.apple.bsd.purge.HelperTool
-  //once the user authorizes this helper tool,
-  //the preferences is stores in defaults, so no need to authorize each time.
-  //if successful, the "file cache" size in activity monitor should decrease.
-PURGE DISK BUFFERS 
-
-If (False)
-  //(debug) force the authorization dialog:
-PURGE DISK BUFFERS (Purge request authorization)
-End if 
+helperToolPath : string (POSIX)
+purgePath : string (POSIX)
+proxyPath : string (POSIX)
+isHelperToolInstalled : bool
+pid: number 
 ```
+
+``purgePath`` is searched by ``/usr/bin/which``
+
+``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
+
+The installer is lanched ``!isHelperToolInstalled``.
