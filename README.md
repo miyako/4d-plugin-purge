@@ -50,7 +50,9 @@ structure of info object:
 ```
 helperToolPath : string (POSIX)
 purgePath : string (POSIX)
+proxyPath : string (POSIX)
 isHelperToolInstalled : bool
+pid: number 
 ```
 
 ``purgePath`` is searched by ``/usr/bin/which``
@@ -58,3 +60,5 @@ isHelperToolInstalled : bool
 ``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
 
 if ``!isHelperToolInstalled``, the installer is lanched.
+
+Due to object referencing conflict in the main thread (especially after reloading the plugin without terminating 4D), a proxy console application is called each time to run ``purge``.
