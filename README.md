@@ -44,3 +44,17 @@ Parameter|Type|Description
 info|TEXT|JSON (out)
 
 The command name and signature is different to the old version.
+
+structure of info object:
+
+```
+helperToolPath : string (POSIX)
+purgePath : string (POSIX)
+isHelperToolInstalled : bool
+```
+
+``purgePath`` is searched by ``/usr/bin/which``
+
+``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
+
+if ``!isHelperToolInstalled``, the installer is lanched.
