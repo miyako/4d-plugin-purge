@@ -31,6 +31,8 @@ SMJobBlessUtil.py setrep {app} {App-Info.plist} {HelperTool-Info.plist}
 
 This updates ``SMPrivilegedExecutables`` in ``App-Info.plist`` and ``SMAuthorizedClients`` in ``HelperTool-Info.plist``.
 
+It seems ``SMJobBless`` and ``launchd`` reads ``Info.plist`` of the main application, not of the plugin (which makes sense). The plugin uses a small app (hidden, ``LSBackgroundOnly``) to install the helper. The "installer" app displays a simple user interface if the argument ``--debug`` is passed.
+
 ## Syntax
 
 ```
