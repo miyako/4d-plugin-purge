@@ -15,7 +15,7 @@ Privileged HelperTool to execute purge on OS X 10.9+
 
 ### Note
 
-The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **deprecated**
+The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **deprecated**.
 
 It was based on [SMJobBless](https://developer.apple.com/library/content/samplecode/SMJobBless/Introduction/Intro.html), not even [BetterAuthorizationSample](https://developer.apple.com/legacy/library/samplecode/BetterAuthorizationSample/Introduction/Intro.html).
 
