@@ -22,8 +22,11 @@ Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/con
 ## Syntax
 
 ```
-PURGE DISK CACHE
+PURGE DISK CACHE (info)
 ```
 
+Parameter|Type|Description
+------------|------------|----
+info|TEXT|JSON (out)
 
-
+The command name and signature is different to the old version.
