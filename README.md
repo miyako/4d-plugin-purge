@@ -23,6 +23,14 @@ Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/con
 
 As explained [here](https://github.com/atnan/SMJobBlessXPC/issues/7), it is imperative to run ``SMJobBlessUtil.py`` before building the application. Do **not** update the project version, or the python script will fail.
 
+The syntax is 
+
+```
+SMJobBlessUtil.py setrep {app} {App-Info.plist} {HelperTool-Info.plist}
+```
+
+This updates ``SMPrivilegedExecutables`` in ``App-Info.plist`` and ``SMAuthorizedClients`` in ``HelperTool-Info.plist``.
+
 ## Syntax
 
 ```
