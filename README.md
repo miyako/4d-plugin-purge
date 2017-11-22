@@ -15,7 +15,7 @@ Privileged HelperTool to execute purge on OS X 10.9+
 
 ### Note
 
-This branch is **deprecated**
+This branch is **deprecated**.
 
 ## Syntax
 
