@@ -347,21 +347,24 @@ void install_helper_tool() /* launch installer */
 
 int call_helper_tool()
 {
-	NSPipe *pipe = [NSPipe pipe];
-	NSFileHandle *file = pipe.fileHandleForReading;
-	NSTask *task = [[NSTask alloc]init];
-	task.launchPath = proxyPath();
-	task.standardOutput = pipe;
-	[task launch];
-	
-	NSData *data = [file readDataToEndOfFile];
-	[file closeFile];
-	
-	if([data length])
+	if(isHelperToolInstalled())
 	{
-		NSString *pid = [[NSString alloc]initWithData:data
-																					encoding:NSUTF8StringEncoding];
-		return [pid intValue];
+		NSPipe *pipe = [NSPipe pipe];
+		NSFileHandle *file = pipe.fileHandleForReading;
+		NSTask *task = [[NSTask alloc]init];
+		task.launchPath = proxyPath();
+		task.standardOutput = pipe;
+		[task launch];
+		
+		NSData *data = [file readDataToEndOfFile];
+		[file closeFile];
+		
+		if([data length])
+		{
+			NSString *pid = [[NSString alloc]initWithData:data
+																					 encoding:NSUTF8StringEncoding];
+			return [pid intValue];
+		}
 	}
 	
 	return 0;
