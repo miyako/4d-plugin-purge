@@ -15,7 +15,9 @@ Privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/
 
 ### Releases
 
-https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.0
+[2.0.1](https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.1)
+
+[2.0.0](https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.0)
 
 ### Note
 
