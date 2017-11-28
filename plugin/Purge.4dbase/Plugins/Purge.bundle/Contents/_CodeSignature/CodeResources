@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			He79xn4OGWfJKu56EaRAOm8QV7Q=
+			fkR2YkZskuzvERXUO2JFmxj+NZ8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			eZ51/t/7Gww7AZgpckNKCsckrSw=
+			pBICfmfjYBbOgEGiGVS/+QQx7BQ=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -398,11 +398,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			He79xn4OGWfJKu56EaRAOm8QV7Q=
+			fkR2YkZskuzvERXUO2JFmxj+NZ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			oz+PB49valbOhK36AxMc1GMpXdObmN+MmKqd58ZB2q0=
+			yCVPaG+AoNbe8jYQQiQp42TAPhWMWffuAmO5MvQr8fA=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -836,6 +836,7 @@
 				D1841FCB1FC5CBA700ED303E /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
 		};
 /* End XCConfigurationList section */
 	};
