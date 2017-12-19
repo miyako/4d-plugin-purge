@@ -15,11 +15,9 @@ Privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/
 
 ### Releases
 
-[2.0.1.1](https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.1.1)
+Hosted on Google Drive because GitHub damages codesign
 
-[2.0.1](https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.1)
-
-[2.0.0](https://github.com/miyako/4d-plugin-purge/releases/tag/2.0.0)
+[2.0.13](https://drive.google.com/file/d/1AMBL3GJEjuMrrZURkZRu_ts6yn1iXIrR/view?usp=sharing)
 
 ### Note
 
