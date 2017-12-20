@@ -21,6 +21,8 @@ Privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/
 
 The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **deprecated**.
 
+You might have to install ``purge`` manually with ``xcode-select --install``
+
 Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
 
 ### Build Information
