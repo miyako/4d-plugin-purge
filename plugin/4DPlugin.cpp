@@ -328,6 +328,17 @@ void install_helper_tool() /* launch installer */
 												 URLByAppendingPathComponent:PURGE_INSTALLER_NAME];
 				if(appURL)
 				{
+                    
+                    @autoreleasepool
+                    {
+                        NSTask *task = [[NSTask alloc]init];
+                        task.launchPath = @"/usr/bin/xattr";
+                        task.arguments = @[@"-c", @"-r", [appURL path]];
+                        [task launch];
+                        [task waitUntilExit];
+                        [task release];
+                    }
+ 
 					NSError *error;
 					if([[NSWorkspace sharedWorkspace]
 							launchApplicationAtURL:appURL

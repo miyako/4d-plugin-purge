@@ -5,14 +5,9 @@
 	<key>files</key>
 	<dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2nXNVj8LCcB/HtRHRSElpdMNcaA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<data>
+		rVPRqnGtu15UqUDzmX6aVf1xKTc=
+		</data>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
@@ -38,25 +33,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M1TZMgcYSVTcV/zglNVWeHDyz4U=
+			CMjLoPkP8hrCL4+Gr2TzQX9MSww=
 			</data>
 			<key>hash2</key>
 			<data>
-			kxr7FLBtq9sW/wxYhxXgB9hRqfdE2LQS3JxSCUv1kTs=
+			rCmjYlG/mnShm8bO3pedbizbGnvGkoZ5AzuKwyLeRFE=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2nXNVj8LCcB/HtRHRSElpdMNcaA=
+			rVPRqnGtu15UqUDzmX6aVf1xKTc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NQvOFZFMAEShVN3HV41jGBdeosR52YT03Qy2zqy29FQ=
+			fxxruSRQBhQmZ9mWGz0Vigo4IpD+3lJu2ZBZeOEhszg=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -102,6 +95,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -161,6 +159,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

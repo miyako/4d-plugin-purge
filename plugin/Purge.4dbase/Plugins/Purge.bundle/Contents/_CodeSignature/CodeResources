@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fkR2YkZskuzvERXUO2JFmxj+NZ8=
+			QlkflX5DJ6qlUNpah3HfPxEq1gU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ur/uwD/diYSnSpZiOhZLKkrxHl8=
+			D1DRYV0beYD1WZEhme7jsmLOef4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -125,10 +125,32 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			pBICfmfjYBbOgEGiGVS/+QQx7BQ=
+			ZBJNsrL27nqkrDZCOPKO4IMsbek=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NbMNi2H6wbItXdIDEhuRyBqGPWk=
+			</data>
+			<key>hash2</key>
+			<data>
+			fGcO489Loudmx8liGvDQil6hacFsl3Rx2MCOhCBDpMk=
+			</data>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Resources/DWARF/com.4D.purge.proxy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z5nWrF0n0AojfAVzGbIaz4FX0nQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			KbJUfG190Gd2M0SnIZbHSKVURvC9m5Etv+oggjBcVnc=
+			</data>
 		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
@@ -398,11 +420,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fkR2YkZskuzvERXUO2JFmxj+NZ8=
+			QlkflX5DJ6qlUNpah3HfPxEq1gU=
 			</data>
 			<key>hash2</key>
 			<data>
-			yCVPaG+AoNbe8jYQQiQp42TAPhWMWffuAmO5MvQr8fA=
+			GGsZnkTfZFvS0rpizebAb2icir2QziolLD02jZjYTs8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -468,6 +490,11 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
+		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -526,6 +553,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

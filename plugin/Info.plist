@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>4DCB</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.1</string>
+	<string>2.0.13</string>
 	<key>CFBundleSignature</key>
 	<string>4D06</string>
 	<key>CFBundleVersion</key>
-	<string>2.0.1</string>
+	<string>2.0.13</string>
 	<key>LSBackgroundOnly</key>
 	<false/>
 	<key>LSMinimumSystemVersion</key>
