@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QlkflX5DJ6qlUNpah3HfPxEq1gU=
+			N73bOLUlqa7+KlSN6RB9LmrdCfA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -116,7 +116,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			D1DRYV0beYD1WZEhme7jsmLOef4=
+			Rs4ssqUrXic7EUu/HVfqVJrX6b4=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
@@ -125,32 +125,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			ZBJNsrL27nqkrDZCOPKO4IMsbek=
+			G2YATuD7snUCcuqGsD/Yq5CyUaY=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
-		</dict>
-		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NbMNi2H6wbItXdIDEhuRyBqGPWk=
-			</data>
-			<key>hash2</key>
-			<data>
-			fGcO489Loudmx8liGvDQil6hacFsl3Rx2MCOhCBDpMk=
-			</data>
-		</dict>
-		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Resources/DWARF/com.4D.purge.proxy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			z5nWrF0n0AojfAVzGbIaz4FX0nQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			KbJUfG190Gd2M0SnIZbHSKVURvC9m5Etv+oggjBcVnc=
-			</data>
 		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
@@ -420,11 +398,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QlkflX5DJ6qlUNpah3HfPxEq1gU=
+			N73bOLUlqa7+KlSN6RB9LmrdCfA=
 			</data>
 			<key>hash2</key>
 			<data>
-			GGsZnkTfZFvS0rpizebAb2icir2QziolLD02jZjYTs8=
+			+FI0qqEnQE88ajQckaFdwcB8UtIpqtdjg2G0sGUKXRM=
 			</data>
 			<key>optional</key>
 			<true/>
