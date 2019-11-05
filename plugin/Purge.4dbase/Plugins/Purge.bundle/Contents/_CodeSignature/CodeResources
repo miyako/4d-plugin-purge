@@ -116,19 +116,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Rs4ssqUrXic7EUu/HVfqVJrX6b4=
+			olh1/MggKTQlwghkULQmZMAlPS8=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 		<key>MacOS/com.4D.purge.proxy</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			G2YATuD7snUCcuqGsD/Yq5CyUaY=
+			rBHYMfOdgRrRJ+4JH78l1x+hj8Y=
 			</data>
 			<key>requirement</key>
-			<string>identifier "com.4D.purge" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier "com.4D.purge" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
@@ -444,10 +444,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Il5bnl4bRrUbZDYL2zFLQ7Xf/aQ=
+			6JpHhghS+rnZ6BxTc2fP0FApsqA=
 			</data>
 			<key>requirement</key>
-			<string>identifier manifest and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
 		</dict>
 	</dict>
 	<key>rules</key>
