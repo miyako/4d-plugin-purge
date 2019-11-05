@@ -116,7 +116,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			olh1/MggKTQlwghkULQmZMAlPS8=
+			g0rxIfuX4PXUMwiJixja41WqREE=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -125,7 +125,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			rBHYMfOdgRrRJ+4JH78l1x+hj8Y=
+			SMKCY0KKeRyUb/YIyuEtxkjSKbU=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -444,7 +444,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			6JpHhghS+rnZ6BxTc2fP0FApsqA=
+			E9UGbKhNm+kv+yaXN4K2yYrs5KY=
 			</data>
 			<key>requirement</key>
 			<string>identifier manifest and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>

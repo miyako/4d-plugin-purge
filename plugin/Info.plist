@@ -15,7 +15,7 @@
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>4DCB</string>
+	<string>BNDL</string>
 	<key>CFBundleSignature</key>
 	<string>4D06</string>
 	<key>CFBundleVersion</key>
@@ -27,7 +27,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.4D.purge.HelperTool</key>
-		<string>identifier "com.4D.purge.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: keisuke miyako (4W9UT59D3B)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		<string>identifier &quot;com.4D.purge.HelperTool&quot; and anchor apple generic and certificate leaf[subject.CN] = &quot;Mac Developer: keisuke miyako (4W9UT59D3B)&quot; and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 	</dict>
 </dict>
 </plist>

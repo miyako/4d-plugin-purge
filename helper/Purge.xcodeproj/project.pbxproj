@@ -245,6 +245,7 @@
 				E4C32DC816023A97002AFAB3 /* Frameworks */,
 				E4C32DC916023A97002AFAB3 /* Resources */,
 				E4C32DE916024D48002AFAB3 /* CopyFiles */,
+				D173EFD8237118D000452B2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -262,6 +263,7 @@
 			buildPhases = (
 				E4CD036415E7A2C300FDC22C /* Sources */,
 				E4CD036515E7A2C300FDC22C /* Frameworks */,
+				D173EFD72371186400452B2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -280,6 +282,7 @@
 				E4ED7B7C15E79B83002AD912 /* Frameworks */,
 				E4ED7B7D15E79B83002AD912 /* Resources */,
 				E4C32DDB16023B43002AFAB3 /* CopyFiles */,
+				D173EFD9237118E200452B2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -353,6 +356,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D173EFD72371186400452B2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "USER_NAME=keisuke.miyako@4d.com\nUUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\nDEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\nPRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\nxattr -cr \"$PRODUCT_PATH\"\ncodesign --remove-signature \"$PRODUCT_PATH\"\ncodesign --verbose --deep --timestamp  --options=runtime --force --sign \"$DEVELOPER_ID\" \"$PRODUCT_PATH\"\n";
+		};
+		D173EFD8237118D000452B2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "USER_NAME=keisuke.miyako@4d.com\nUUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\nDEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\nPRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\nxattr -cr \"$PRODUCT_PATH\"\ncodesign --remove-signature \"$PRODUCT_PATH\"\ncodesign --verbose --deep --timestamp  --options=runtime --force --sign \"$DEVELOPER_ID\" \"$PRODUCT_PATH\"\n";
+		};
+		D173EFD9237118E200452B2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "USER_NAME=keisuke.miyako@4d.com\nUUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\nDEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\nPRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\nxattr -cr \"$PRODUCT_PATH\"\ncodesign --remove-signature \"$PRODUCT_PATH\"\ncodesign --verbose --deep --timestamp  --options=runtime --force --sign \"$DEVELOPER_ID\" \"$PRODUCT_PATH\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4C32DC716023A97002AFAB3 /* Sources */ = {

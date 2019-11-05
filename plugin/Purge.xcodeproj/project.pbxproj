@@ -369,7 +369,6 @@
 				8D01CCCB0486CAD60068D4B7 /* Sources */,
 				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
 				8D01CCCF0486CAD60068D4B7 /* Rez */,
-				D173EFD62371141100452B2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,7 +387,6 @@
 				D1841FC01FC5CBA700ED303E /* Sources */,
 				D1841FC11FC5CBA700ED303E /* Frameworks */,
 				D1841FC21FC5CBA700ED303E /* CopyFiles */,
-				D173EFD52371140200452B2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -459,43 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXRezBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D173EFD52371140200452B2C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
-		};
-		D173EFD62371141100452B2C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "USER_NAME=keisuke.miyako@4d.com\nUUID=`uuidgen | tr -d - | tr -d '\\n' | tr '[:upper:]' '[:lower:]'`\nDEVELOPER_ID=`security find-identity -p codesigning -v | egrep 'Developer ID Application[^\"]+' -o`\nPRODUCT_PATH=\"$CODESIGNING_FOLDER_PATH\"\nxattr -cr \"$PRODUCT_PATH\"\ncodesign --remove-signature \"$PRODUCT_PATH\"\ncodesign --verbose --deep --timestamp --force --sign \"$DEVELOPER_ID\" \"$PRODUCT_PATH\"\nDMG_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.dmg\"\nZIP_PATH=\"$PROJECT_DIR/$PRODUCT_NAME.zip\"\nrm \"$DMG_PATH\"\nhdiutil create -format UDBZ -plist -srcfolder \"$PRODUCT_PATH\" \"$DMG_PATH\"\necho \"xcrun stapler staple \\\"$PRODUCT_PATH\\\"\"\necho \"hdiutil create -format UDBZ -plist -srcfolder  \\\"$PRODUCT_PATH\\\" \\\"$DMG_PATH\\\" \"\necho \"ditto -c -k --keepParent \\\"$PRODUCT_PATH\\\" \\\"$ZIP_PATH\\\" \"\nxcrun altool --notarize-app --file \"$DMG_PATH\" --username \"$USER_NAME\" --password \"@keychain:altool\" --primary-bundle-id $PRODUCT_BUNDLE_IDENTIFIER.$UUID\nrm -f \"$ZIP_PATH\"\nrm -f \"$DMG_PATH\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
