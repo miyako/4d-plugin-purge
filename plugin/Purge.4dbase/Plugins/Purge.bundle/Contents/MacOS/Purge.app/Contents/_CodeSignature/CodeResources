@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
-		eSyyRWLf7mprhbXsJBaAFHxj13E=
+		s9rUpXBUEXyEAF/R9XxFJ+luP04=
 		</data>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -31,32 +31,20 @@
 	<dict>
 		<key>Library/LaunchServices/com.4D.purge.HelperTool</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NKrr+HpVWJqqyMZ/IZPjgcOoXX0=
-			</data>
 			<key>hash2</key>
 			<data>
-			WWUOe2kfi0P63rfxVrZ3WPr+IShbnvVI4x7bjSmltVg=
+			taS/vx5yRDaI98JXEyUXZGB9C26N4fd4dZdOgoy2IPY=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eSyyRWLf7mprhbXsJBaAFHxj13E=
-			</data>
 			<key>hash2</key>
 			<data>
-			1oraS22swdQe88b29cEfJUk1UQCh2aY4NumO+aRRLh4=
+			EZiTL4G/VWgerDEMFb3/sOCP/qdkluMEWGo8oOk8cOg=
 			</data>
 		</dict>
 		<key>Resources/en.lproj/InfoPlist.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mrpafAqnSkDd8NFeaRyXavCaRJI=
-			</data>
 			<key>hash2</key>
 			<data>
 			dZPv6ryGpfJywf84gdNacWHrQqw7I1S6W5oM0QlDzYY=
@@ -66,10 +54,6 @@
 		</dict>
 		<key>Resources/en.lproj/MainMenu.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3RryAWGN9fJsrsDiXzBgmXLfkTA=
-			</data>
 			<key>hash2</key>
 			<data>
 			l2rfMtOqk4Dq/YxATu1gr0xF0iQUQg+zF6jUg1xPXEA=
