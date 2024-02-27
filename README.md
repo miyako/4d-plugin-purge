@@ -1,20 +1,18 @@
-![deprecated](https://img.shields.io/badge/-deprecated-inactive)
-
 Use privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/purge.8.html) on macOS.
 
-The helper tool installation to `/Library/PrivilegedHelperTools/com.4D.purge.HelperTool` seems to be not working!
+**Note**: You need to install `purge` with Xocde or manually with ``xcode-select --install``.
 
-```
-SMJobBless success:0, reason:Error Domain=CFErrorDomainLaunchd Code=4 "(null)"
-```
-
-# About
+# How to
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
 
 <img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/798e06db-cdd2-419a-9ebc-a44256c680fb" width="240" />
 
-If you accept, you can start using the plugin command, which internally calls `purge` via the helper tool.
+If you accept, a background item is added to the system.
+
+This means `com.4D.purge.HelperTool` is added to `/Library/PrivilegedHelperTools`
+
+Now you can start using the plugin command, which internally calls `purge` via the helper tool.
 
 <img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/8ae0124a-046c-4575-a70d-b7616674a3b2" width="560" />
 
@@ -33,10 +31,6 @@ pid: number
 ``helperToolPath`` is searched in ``Library/PrivilegedHelperTools``
 
 The installer is lanched if ``!isHelperToolInstalled``.
-
-### Remarks
-
-You have to install ``purge`` manually with ``xcode-select --install``
 
 ### Build Information
 
