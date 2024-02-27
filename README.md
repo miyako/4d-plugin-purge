@@ -40,6 +40,8 @@ Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/con
 
 As explained [here](https://github.com/atnan/SMJobBlessXPC/issues/7), it is imperative to run ``SMJobBlessUtil.py`` before building the application. Do **not** update the project version, or the python script will fail.
 
+python3 version: https://gist.github.com/mikeyh/89a1e2ecc6849ff6056b7391c5216799
+
 The syntax is 
 
 ```
