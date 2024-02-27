@@ -1,0 +1,11 @@
+{
+    "name": "Purge",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "Purge",
+            "syntax": "Purge disk cache:J",
+            "threadSafe": true
+        }
+    ]
+}

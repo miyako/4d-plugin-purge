@@ -8,12 +8,18 @@
  #
  # --------------------------------------------------------------------------------*/
 
+#ifndef FOURD_PLUGIN_H
+#define FOURD_PLUGIN_H
+
+#include "4DPluginAPI.h"
+#include "4DPlugin-JSON.h"
+
+#include <AppKit/AppKit.h>
 #include <ServiceManagement/ServiceManagement.h>
 #include "HelperTool.h"
-#include "libjson.h"
 
-void setup_helper_tool();
-void disconnect_from_helper_tool();
+static void setup_helper_tool();
 
-// --- Purge
-void PURGE_DISK_CACHE(sLONG_PTR *pResult, PackagePtr pParams);
+static void PURGE_DISK_CACHE(PA_PluginParameters params);
+
+#endif /* FOURD_PLUGIN_H */
