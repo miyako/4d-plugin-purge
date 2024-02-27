@@ -10,7 +10,7 @@ When you call the plugin for the first time, the system prompt to install a new 
 
 If you accept, a background item is added to the system.
 
-This means `com.4D.purge.HelperTool` is added to `/Library/PrivilegedHelperTools`
+This means `com.4D.purge.HelperTool` is added to `/Library/PrivilegedHelperTools`.
 
 Now you can start using the plugin command, which internally calls `purge` via the helper tool.
 
