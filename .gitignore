@@ -1,2 +1,3 @@
 plugin/build/*
 plugin/Purge.xcodeproj/xcuserdata/*
+helper/Purge.xcodeproj/project.xcworkspace/*
