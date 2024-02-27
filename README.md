@@ -2,7 +2,7 @@ Use privileged HelperTool to execute [``purge``](https://developer.apple.com/leg
 
 **Note**: You need to install `purge` with Xocde or manually with ``xcode-select --install``.
 
-# How to
+# About
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
 
@@ -16,15 +16,15 @@ Now you can start using the plugin command, which internally calls `purge` via t
 
 <img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/8ae0124a-046c-4575-a70d-b7616674a3b2" width="560" />
 
-* Structure of returned object:
+* Structure of returned object
 
-```
-helperToolPath : string (POSIX)
-purgePath : string (POSIX)
-proxyPath : string (POSIX)
-isHelperToolInstalled : bool
-pid: number 
-```
+|property|type|description|
+|:-|:-:|:-:|
+|helperToolPath|Text||
+|purgePath|Text||
+|proxyPath|Text||
+|isHelperToolInstalled|Boolean||
+|pid|Number||
 
 ``purgePath`` is searched by ``/usr/bin/which``
 
@@ -32,7 +32,7 @@ pid: number
 
 The installer is lanched if ``!isHelperToolInstalled``.
 
-### Build Information
+# Build Information
 
 Based on [EvenBetterAuthorizationSample](https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html).
 
