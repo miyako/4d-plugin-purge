@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Purge" uuid="30F20A15D5558348BD9812A1C6C8C23A" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra data_file_path=":Purge.4DD" package_name="Purge" structure_file_name="Purge" __stringCompHash="icu:73.2.0" __keywordBuildingHash="icu:73.2.0"/>
+</base>
