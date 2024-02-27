@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4AD7AA91608DC4C00F594A2 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; };
 		E4AD7AC216090A3300F594A2 /* XPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7AA11608DBEC00F594A2 /* XPCService.m */; };
 		E4AD7AC316090A3600F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A9E1608DBEC00F594A2 /* main.m */; };
 		E4C32DCC16023A97002AFAB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372FB15E7D4FE007554D3 /* Foundation.framework */; };
 		E4C32DE516024494002AFAB3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C32DE616024498002AFAB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
-		E4C32DEA16024D51002AFAB3 /* com.4D.purge.HelperTool in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4CD036715E7A2C300FDC22C /* com.4D.purge.HelperTool */; };
 		E4C32E781603536C002AFAB3 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CBCCEB15EBBB8D0081DF5C /* Common.m */; };
 		E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F715E7D4D4007554D3 /* ServiceManagement.framework */; };
 		E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C372F915E7D4D8007554D3 /* Security.framework */; };
@@ -54,17 +52,6 @@
 			dstPath = Contents/Library/LaunchServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E4AD7AA91608DC4C00F594A2 /* com.4D.purge.HelperTool in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4C32DE916024D48002AFAB3 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LaunchServices;
-			dstSubfolderSpec = 1;
-			files = (
-				E4C32DEA16024D51002AFAB3 /* com.4D.purge.HelperTool in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +231,6 @@
 				E4C32DC716023A97002AFAB3 /* Sources */,
 				E4C32DC816023A97002AFAB3 /* Frameworks */,
 				E4C32DC916023A97002AFAB3 /* Resources */,
-				E4C32DE916024D48002AFAB3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
