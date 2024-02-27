@@ -49,7 +49,7 @@ python3 version: https://gist.github.com/mikeyh/89a1e2ecc6849ff6056b7391c5216799
 The syntax is 
 
 ```
-SMJobBlessUtil.py setrep {app} {App-Info.plist} {HelperTool-Info.plist}
+SMJobBlessUtil.py setreq {app} {App-Info.plist} {HelperTool-Info.plist}
 ```
 
 This updates ``SMPrivilegedExecutables`` in ``App-Info.plist`` and ``SMAuthorizedClients`` in ``HelperTool-Info.plist``.
