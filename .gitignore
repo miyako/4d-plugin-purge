@@ -2,3 +2,4 @@ plugin/build/*
 plugin/Purge.xcodeproj/xcuserdata/*
 helper/Purge.xcodeproj/project.xcworkspace/*
 plugin/Purge.xcodeproj/project.xcworkspace/*
+plugin/Purge.4dbase/userPreferences.*
