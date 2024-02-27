@@ -1,5 +1,7 @@
 Use privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/purge.8.html) on macOS.
 
+The helper tool installation to `/Library/PrivilegedHelperTools/com.4D.purge.HelperTool` seems to be not working!
+
 # About
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
