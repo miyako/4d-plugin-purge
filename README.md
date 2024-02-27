@@ -32,9 +32,7 @@ The installer is lanched if ``!isHelperToolInstalled``.
 
 ### Remarks
 
-The [10.9](https://github.com/miyako/4d-plugin-purge/tree/10.9) branch is **deprecated**.
-
-You might have to install ``purge`` manually with ``xcode-select --install``
+You have to install ``purge`` manually with ``xcode-select --install``
 
 ### Build Information
 
