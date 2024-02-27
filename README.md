@@ -2,7 +2,7 @@ Use privileged HelperTool to execute [``purge``](https://developer.apple.com/leg
 
 **Note**: You need to install `purge` with Xocde or manually with ``xcode-select --install``.
 
-# How to
+# About
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
 
