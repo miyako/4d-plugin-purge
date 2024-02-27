@@ -4,6 +4,10 @@ Use privileged HelperTool to execute [``purge``](https://developer.apple.com/leg
 
 The helper tool installation to `/Library/PrivilegedHelperTools/com.4D.purge.HelperTool` seems to be not working!
 
+```
+SMJobBless success:0, reason:Error Domain=CFErrorDomainLaunchd Code=4 "(null)"
+```
+
 # About
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
