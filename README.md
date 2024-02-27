@@ -1,5 +1,4 @@
-4d-plugin-purge
-===============
+# 4d-plugin-purge (old syntax)
 
 Privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/purge.8.html) on macOS
 
