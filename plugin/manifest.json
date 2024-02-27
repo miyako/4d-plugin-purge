@@ -1,1 +1,11 @@
-﻿{"name":"Purge","id":20000,"commands":[{"theme":"Purge","syntax":"PURGE DISK CACHE(&T)"}]}
+{
+    "name": "Purge",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "Purge",
+            "syntax": "Purge disk cache:J",
+            "threadSafe": true
+        }
+    ]
+}
