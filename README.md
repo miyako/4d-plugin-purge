@@ -1,3 +1,5 @@
+![deprecated](https://img.shields.io/badge/-deprecated-inactive)
+
 Use privileged HelperTool to execute [``purge``](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man8/purge.8.html) on macOS.
 
 The helper tool installation to `/Library/PrivilegedHelperTools/com.4D.purge.HelperTool` seems to be not working!
