@@ -29,6 +29,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Library/LaunchServices/com.4D.purge.HelperTool</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UROgF9Ny/Weo3daKwgNRLbYKhMcN0zRRPzdq7p3spus=
+			</data>
+		</dict>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<dict>
 			<key>hash2</key>
