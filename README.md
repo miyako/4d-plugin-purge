@@ -30,14 +30,14 @@ It seems like there is no easy way to call ``NSXPCConnection`` or ``NSXPCInterfa
 ## Syntax
 
 ```
-PURGE DISK CACHE (info)
+info:=Purge disk cache
 ```
 
 Parameter|Type|Description
 ------------|------------|----
-info|TEXT|JSON (out)
+info|Object|
 
-The command name and signature is different to the old version.
+The command name and signature is different to the old version or the old old version.
 
 structure of info object:
 
