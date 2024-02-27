@@ -120,7 +120,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			96Qx7DsYZi/idS4glKPKrL81mpQ=
+			kVmGD+DG+QHXa8XL61NkQyxlrg0=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
@@ -133,6 +133,34 @@
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.4D.purge" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IfrB75cJTA/jzGTiY1gA0I7IuAn4jHSeuQFP9b+2b3I=
+			</data>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Resources/DWARF/com.4D.purge.proxy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iTjQVa3yaHOpJFh4AM7j9/6lt8Dfm8iLlUWffc5Imqc=
+			</data>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Resources/Relocations/aarch64/com.4D.purge.proxy.yml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9wbsRKyB3EzxGyyGVtOKoAKOOHIk62aHz+xOVRz24cU=
+			</data>
+		</dict>
+		<key>MacOS/com.4D.purge.proxy.dSYM/Contents/Resources/Relocations/x86_64/com.4D.purge.proxy.yml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yjPNvzKL4Z7N2otIu3cGSX29K8qxw57B4Ucb2HHNH5c=
+			</data>
 		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>

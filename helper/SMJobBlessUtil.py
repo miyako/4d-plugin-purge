@@ -113,7 +113,7 @@ def readDesignatedRequirement(programPath, programType):
         raise CheckException("%s designated requirement unreadable" % programType, programPath)
 
     reqLines = req.splitlines()
-    if len(reqLines) != 1 or not req.startswith('designated => '):
+    if len(reqLines) != 1 or not req.startswith("designated => "):
         raise CheckException("%s designated requirement malformed" % programType, programPath)
     return reqLines[0][len("designated => "):]
 

@@ -1,0 +1,12 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/miyako/Documents/GitHub/4d-plugin-purge/plugin/Purge.4dbase/Plugins/Purge.bundle/Contents/MacOS/com.4D.purge.proxy'
+relocations:
+  - { offsetInCU: 0x27, offset: 0x896F7, size: 0x8, addend: 0x0, symName: _purgePath, symObjAddr: 0x0, symBinAddr: 0x100003756, symSize: 0x166 }
+  - { offsetInCU: 0x4A, offset: 0x8971A, size: 0x8, addend: 0x0, symName: _purgePath, symObjAddr: 0x0, symBinAddr: 0x100003756, symSize: 0x166 }
+  - { offsetInCU: 0x1EF, offset: 0x898BF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x166, symBinAddr: 0x1000038BC, symSize: 0x1EB }
+  - { offsetInCU: 0x3D1, offset: 0x89AA1, size: 0x8, addend: 0x0, symName: ___main_block_invoke, symObjAddr: 0x351, symBinAddr: 0x100003AA7, symSize: 0x14 }
+  - { offsetInCU: 0x408, offset: 0x89AD8, size: 0x8, addend: 0x0, symName: ___main_block_invoke_2, symObjAddr: 0x365, symBinAddr: 0x100003ABB, symSize: 0x53 }
+  - { offsetInCU: 0x49E, offset: 0x89B6E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32r, symObjAddr: 0x3B8, symBinAddr: 0x100003B0E, symSize: 0x17 }
+  - { offsetInCU: 0x4C7, offset: 0x89B97, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32r, symObjAddr: 0x3CF, symBinAddr: 0x100003B25, symSize: 0x13 }
+...
