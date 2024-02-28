@@ -6,7 +6,7 @@ Use privileged HelperTool to execute [``purge``](https://developer.apple.com/leg
 
 When you call the plugin for the first time, the system prompt to install a new helper tool
 
-<img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/798e06db-cdd2-419a-9ebc-a44256c680fb" width="240" />
+<img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/798e06db-cdd2-419a-9ebc-a44256c680fb" style="height:240px;width:auto;" />
 
 If you accept, a background item is added to the system.
 
@@ -14,7 +14,7 @@ This means `com.4D.purge.HelperTool` is added to `/Library/PrivilegedHelperTools
 
 Now you can start using the plugin command, which internally calls `purge` via the helper tool.
 
-<img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/8ae0124a-046c-4575-a70d-b7616674a3b2" width="560" />
+<img src="https://github.com/miyako/4d-plugin-purge/assets/1725068/8ae0124a-046c-4575-a70d-b7616674a3b2" style="height:360px;width:auto;" />
 
 * Structure of returned object
 
