@@ -145,42 +145,88 @@ void install_helper_tool() /* launch installer */{
 	}
 }
 
+/* the proxy waits for the helper's XPC reply and never exits if none comes */
+#define PURGE_PROXY_TIMEOUT 10.0
+
 int call_helper_tool(){
     
+	int purge_pid = 0;
+	
 	if(isHelperToolInstalled())
 	{
+		NSString *path = proxyPath();
+		
+		/* -[NSTask launch] raises if the launch path is not executable */
+		if(([path length] == 0) || (![[NSFileManager defaultManager]isExecutableFileAtPath:path]))
+			return 0;
+		
 		NSPipe *pipe = [NSPipe pipe];
 		NSFileHandle *file = pipe.fileHandleForReading;
 		NSTask *task = [[NSTask alloc]init];
-		task.launchPath = proxyPath();
+		task.launchPath = path;
 		task.standardOutput = pipe;
-		[task launch];
 		
-		NSData *data = [file readDataToEndOfFile];
-		[file closeFile];
-		
-		if([data length])
+		BOOL launched = NO;
+		@try
 		{
-			NSString *pid = [[NSString alloc]initWithData:data
-																					 encoding:NSUTF8StringEncoding];
-			return [pid intValue];
+			[task launch];
+			launched = YES;
 		}
+		@catch(NSException *e)
+		{
+			NSLog(@"%@ launch failed: %@", PURGE_PROXY_NAME, e);
+		}
+		
+		if(launched)
+		{
+			/* bounded wait instead of blocking in readDataToEndOfFile forever;
+			   the proxy only prints a short pid, which fits in the pipe buffer */
+			NSDate *deadline = [NSDate dateWithTimeIntervalSinceNow:PURGE_PROXY_TIMEOUT];
+			while([task isRunning] && ([deadline timeIntervalSinceNow] > 0))
+			{
+				[NSThread sleepForTimeInterval:0.05];
+			}
+			
+			if([task isRunning])
+			{
+				[task terminate];
+				[task waitUntilExit];
+			}
+			
+			NSData *data = [file readDataToEndOfFile];
+			
+			if([data length])
+			{
+				NSString *pid = [[NSString alloc]initWithData:data
+																						 encoding:NSUTF8StringEncoding];
+				purge_pid = [pid intValue];
+				[pid release];
+			}
+		}
+		
+		[file closeFile];
+		[task release];
 	}
 	
-	return 0;
+	return purge_pid;
 }
 
 static void PURGE_DISK_CACHE(PA_PluginParameters params){
     
-	install_helper_tool();
-
     PA_ObjectRef status = PA_CreateObject();
     
-    ob_set_s(status, L"helperToolPath", [helperToolPath() UTF8String]);
-    ob_set_s(status, L"purgePath", [purgePath() UTF8String]);
-    ob_set_b(status, L"isHelperToolInstalled", isHelperToolInstalled());
-    ob_set_s(status, L"proxyPath", [proxyPath() UTF8String]);
-    ob_set_n(status, L"pid", call_helper_tool());
+    /* the command is threadSafe: drain autoreleased objects here rather than
+       in whatever pool the calling thread may (or may not) have */
+    @autoreleasepool
+    {
+        install_helper_tool();
+        
+        ob_set_s(status, L"helperToolPath", [helperToolPath() UTF8String]);
+        ob_set_s(status, L"purgePath", [purgePath() UTF8String]);
+        ob_set_b(status, L"isHelperToolInstalled", isHelperToolInstalled());
+        ob_set_s(status, L"proxyPath", [proxyPath() UTF8String]);
+        ob_set_n(status, L"pid", call_helper_tool());
+    }
     
     PA_ReturnObject(params, status);
 }
