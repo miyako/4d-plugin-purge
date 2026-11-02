@@ -1,5 +1,13 @@
-plugin/build/*
-plugin/Purge.xcodeproj/xcuserdata/*
+.DS_Store
+build/
+Purge.xcodeproj/xcuserdata/*
+Purge.xcodeproj/project.xcworkspace/*
 helper/Purge.xcodeproj/project.xcworkspace/*
-plugin/Purge.xcodeproj/project.xcworkspace/*
-plugin/Purge.4dbase/userPreferences.*
+*.4dbase/Logs/
+*.4dbase/userPreferences.*/
+/Purge.dmg
+/Purge.zip
+# only the plugin binary and its signature are build outputs; Purge.app and
+# com.4D.purge.proxy in MacOS/ are prebuilt and must stay tracked
+Purge.4dbase/Plugins/Purge.bundle/Contents/MacOS/Purge
+Purge.4dbase/Plugins/Purge.bundle/Contents/_CodeSignature/
